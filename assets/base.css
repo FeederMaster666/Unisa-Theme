@@ -104,7 +104,12 @@ select {
   display: block !important;
   order: -1; /* lo empuja a la izquierda */
 }
-
+/* Ocultar el menú horizontal clásico en desktop */
+@media screen and (min-width: 990px) {
+  .header__inline-menu {
+    display: none !important;
+  }
+}
 
 @media (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
   .card-hover-effect-lift .product-card:hover,
