@@ -66,8 +66,8 @@
         "section_width": "full-width",
         "color_scheme": "scheme-2",
         "divider_width": 0,
-        "padding-block-start": 28,
-        "padding-block-end": 28
+        "padding-block-start": 21,
+        "padding-block-end": 21
       }
     },
     "header_section": {
