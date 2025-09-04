@@ -668,14 +668,14 @@
               },
               "blocks": {}
             },
-            "review_bcyM7k": {
+            "review_m7rYr4": {
               "type": "review",
               "name": "t:names.product_review_stars",
               "settings": {
-                "stars_style": "single",
+                "stars_style": "shaded",
                 "show_number": true,
                 "rating_color": "primary",
-                "type_preset": "h4",
+                "type_preset": "paragraph",
                 "alignment": "left"
               },
               "blocks": {}
@@ -683,7 +683,7 @@
           },
           "block_order": [
             "text_j6FTUa",
-            "review_bcyM7k"
+            "review_m7rYr4"
           ]
         }
       },
