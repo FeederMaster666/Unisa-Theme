@@ -84,7 +84,7 @@
           "background": "#ffffff",
           "foreground_heading": "#000000",
           "foreground": "#ffffff",
-          "primary": "#000000",
+          "primary": "#777777",
           "primary_hover": "#777777",
           "border": "#e6e6e6",
           "shadow": "#00000029",
@@ -237,7 +237,7 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#333333",
+          "background": "#000000",
           "foreground_heading": "#ffffff",
           "foreground": "#ffffff",
           "primary": "#ffffff",
