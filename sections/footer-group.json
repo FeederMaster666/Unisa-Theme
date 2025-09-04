@@ -214,7 +214,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -289,44 +289,18 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Quality first</h2>",
+                "text": "<h5><strong>Información</strong></h5>",
                 "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h4",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "h5",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_nVDMUX": {
-              "type": "text",
-              "name": "Description",
-              "settings": {
-                "text": "<p>We obsess over the details and strive to deliver the best products at the best prices, every time.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -339,8 +313,7 @@
             }
           },
           "block_order": [
-            "text_tEGGef",
-            "text_nVDMUX"
+            "text_tEGGef"
           ]
         },
         "group_QHFh9X": {
