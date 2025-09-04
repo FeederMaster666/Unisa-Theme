@@ -237,9 +237,7 @@
         "text_XBW7DE",
         "button_aUad3W"
       ],
-      "custom_css": [
-        ".button {background-color: red; border-color: red ; color: #fff;}"
-      ],
+      "custom_css": [],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
@@ -258,7 +256,7 @@
         "section_width": "full-width",
         "section_height": "full-screen",
         "section_height_custom": 50,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-3",
         "toggle_overlay": true,
         "overlay_color": "#00000026",
         "overlay_style": "gradient",
