@@ -100,10 +100,7 @@ select {
 }
 
 
-.header__icon--menu {
-  display: block !important;
-  order: -1; /* lo empuja a la izquierda */
-}
+
 
 
 @media (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
@@ -322,16 +319,7 @@ p:empty {
 }
 
 @media screen and (min-width: 750px) {
-  .header__inline-menu {/* Ocultar el menú horizontal clásico en desktop */
-
-    display: none !important;
-  }
-  .button,
-  .button-secondary {
-    display: block;
-    margin-left: auto;   /* empuja hacia la derecha */
-    margin-right: 0;
-  }
+  
   .page-width-wide,
   .page-width-normal,
   .page-width-narrow,
@@ -479,6 +467,12 @@ p:empty {
 }
 
 @media screen and (max-width: 749px) {
+  .button,
+  .button-secondary {
+    display: block;
+    margin-left: auto;   /* empuja hacia la derecha */
+    margin-right: 0;
+  }
   .hidden--mobile,
   .mobile\:hidden {
     /* stylelint-disable-next-line declaration-no-important */
