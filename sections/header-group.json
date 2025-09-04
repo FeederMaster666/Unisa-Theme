@@ -117,7 +117,9 @@
           "blocks": {}
         }
       },
-      "custom_css": [],
+      "custom_css": [
+        "a.menu-list__link[href*=\"Rebajas\"] {color: red !important;}"
+      ],
       "settings": {
         "logo_position": "left",
         "menu_position": "left",
