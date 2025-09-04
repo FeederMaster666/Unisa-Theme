@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Unisa-logo.png",
+    "logo": "shopify://shop_images/logo-header.png",
     "type_body_font": "inter_n4",
     "type_subheading_font": "inter_n5",
     "type_heading_font": "inter_n7",
@@ -54,8 +54,9 @@
     "secondary_button_border_width": 1,
     "button_border_radius_secondary": 14,
     "button_font_weight_secondary": "default",
-    "cart_type": "drawer",
+    "cart_type": "page",
     "cart_price_font": "secondary",
+    "auto_open_cart_drawer": false,
     "show_cart_note": false,
     "show_add_discount_code": true,
     "drawer_drop_shadow": true,
