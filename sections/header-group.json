@@ -79,7 +79,7 @@
           "settings": {
             "hide_logo_on_home_page": false,
             "custom_height": 96,
-            "custom_height_mobile": 25,
+            "custom_height_mobile": 70,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -139,7 +139,7 @@
         "color_scheme_top": "scheme-1",
         "color_scheme_bottom": "",
         "color_scheme_transparent": "scheme-6",
-        "enable_transparent_header_home": false,
+        "enable_transparent_header_home": true,
         "home_color_scheme": "inverse",
         "enable_transparent_header_product": false,
         "product_color_scheme": "default",
