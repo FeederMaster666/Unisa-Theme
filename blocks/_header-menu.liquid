@@ -120,9 +120,35 @@
     padding-block: var(--padding-2xs);
   }
 
+  .header__icon--menu {
+  display: block !important;
+  order: -1; /* lo manda a la izquierda */
+  }
+
   header-menu {
     width: 100%;
   }
+
+/* Drawer menú estilo Unisa */
+.menu-drawer {
+  background: #fff !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 40px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu-drawer__navigation a {
+  color: #211F1D !important;
+  text-decoration: none;
+  display: block;
+  padding: 12px 0;
+}
+
+.menu-drawer__navigation a:hover {
+  text-decoration: underline;
+}
 
   /* Drawer menu featured content */
   .menu-drawer__featured-content {
