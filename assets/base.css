@@ -467,10 +467,7 @@ p:empty {
 }
 
 @media screen and (max-width: 749px) {
-  .button, {
-  color: #ff0000; /* Rojo */
-}
-  .button-secondary {
+  .button--full-width-mobile {
     display: block;
     margin-left: auto;   /* empuja hacia la derecha */
     margin-right: 0;
