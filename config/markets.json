@@ -8,9 +8,5 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "mercado-internacional-prueba": {
-      "parent": "@default"
-    }
-  }
+  "markets": {}
 }
