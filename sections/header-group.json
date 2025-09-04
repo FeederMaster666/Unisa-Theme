@@ -118,7 +118,7 @@
         }
       },
       "custom_css": [
-        ".header__inline-menu li:nth-child(1) a {color: red !important;}"
+        ".header__menu-item[href=\"/Rebajas\"] {color: #e02020 !important;}"
       ],
       "settings": {
         "logo_position": "left",
