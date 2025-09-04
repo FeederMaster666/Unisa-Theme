@@ -99,7 +99,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -228,7 +228,7 @@
                   "type": "text",
                   "name": "Heading",
                   "settings": {
-                    "text": "<p>Join our email list</p>",
+                    "text": "",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -254,7 +254,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Get exclusive deals and early access to new products. </p>",
+                    "text": "",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -281,37 +281,10 @@
                 "text_3L9Fjq",
                 "text_eC4rXd"
               ]
-            },
-            "email_signup_NcLwNb": {
-              "type": "email-signup",
-              "name": "Email input",
-              "settings": {
-                "width": "custom",
-                "custom_width": 50,
-                "inherit_color_scheme": true,
-                "heading": "",
-                "heading_preset": "h3",
-                "color_scheme": "scheme-1",
-                "border_style": "all",
-                "border_width": 1,
-                "border_radius": 39,
-                "input_type_preset": "paragraph",
-                "style_class": "button-unstyled",
-                "display_type": "arrow",
-                "label": "Sign up",
-                "integrated_button": true,
-                "button_type_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "group_4aCyy7",
-            "email_signup_NcLwNb"
+            "group_4aCyy7"
           ]
         },
         "footer_utilities_KRaGcH": {
@@ -417,7 +390,7 @@
         "gap": 48,
         "section_width": "page-width",
         "section_height": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
