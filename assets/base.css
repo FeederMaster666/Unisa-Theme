@@ -467,7 +467,9 @@ p:empty {
 }
 
 @media screen and (max-width: 749px) {
-  .button,
+  .button, {
+  color: #ff0000; /* Rojo */
+}
   .button-secondary {
     display: block;
     margin-left: auto;   /* empuja hacia la derecha */
