@@ -117,6 +117,9 @@
           "blocks": {}
         }
       },
+      "custom_css": [
+        ".header__inline-menu li:nth-child(1) a {color: red !important;}"
+      ],
       "settings": {
         "logo_position": "left",
         "menu_position": "left",
