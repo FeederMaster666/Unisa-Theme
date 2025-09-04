@@ -667,23 +667,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "review_m7rYr4": {
-              "type": "review",
-              "name": "t:names.product_review_stars",
-              "settings": {
-                "stars_style": "shaded",
-                "show_number": true,
-                "rating_color": "primary",
-                "type_preset": "paragraph",
-                "alignment": "left"
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_j6FTUa",
-            "review_m7rYr4"
+            "text_j6FTUa"
           ]
         }
       },
