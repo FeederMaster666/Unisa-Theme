@@ -17,7 +17,7 @@
         "announcement_cVWPib": {
           "type": "_announcement",
           "settings": {
-            "text": "<strong>Envío estándar gratuito a partir de 69,90€    +info</strong>",
+            "text": "<strong>Envío estandar gratuito a partir de 69,90€    +info</strong>",
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "0.875rem",
@@ -60,7 +60,9 @@
         "announcement_NrDBgh",
         "announcement_Ux74NK"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".announcement-bar:nth-child(3) {background-color: #e02020; color: #fff;}"
+      ],
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
@@ -117,9 +119,7 @@
           "blocks": {}
         }
       },
-      "custom_css": [
-        ".header__menu-item[href=\"/Rebajas\"] {color: #e02020 !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "left",
         "menu_position": "left",
