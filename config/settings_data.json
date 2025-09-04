@@ -91,7 +91,7 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#ba131300",
           "foreground_heading": "#000000",
           "foreground": "#ffffff",
           "primary": "#777777",
@@ -171,9 +171,9 @@
         "settings": {
           "background": "#ffffff",
           "foreground_heading": "#000000",
-          "foreground": "#000000cf",
-          "primary": "#636363cf",
-          "primary_hover": "#636363",
+          "foreground": "#000000",
+          "primary": "#000000",
+          "primary_hover": "#000000",
           "border": "#000000",
           "shadow": "#00000029",
           "primary_button_background": "#000000",
