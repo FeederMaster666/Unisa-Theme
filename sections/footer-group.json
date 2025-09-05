@@ -11,37 +11,6 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
-    "galeria_modal_unisa_BgmxDG": {
-      "type": "galeria-modal-unisa",
-      "blocks": {
-        "image_bgjkdY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/cabecera.jpg"
-          }
-        },
-        "image_U8qcHQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/cabecera.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_bgjkdY",
-        "image_U8qcHQ"
-      ],
-      "name": "Galería modal (Unisa)",
-      "settings": {
-        "ig_label": "",
-        "ig_url": "",
-        "intro_text": "Descubre nuestras últimas publicaciones.",
-        "highlight_text": "Campaña Otoño / Invierno",
-        "small_text": "",
-        "cta_link": "",
-        "cta_label": "Ver más"
-      }
-    },
     "section_rNXfgx": {
       "type": "section",
       "blocks": {
@@ -915,7 +884,6 @@
     }
   },
   "order": [
-    "galeria_modal_unisa_BgmxDG",
     "section_rNXfgx",
     "divider_eDBMJd",
     "section_3C8jEr",

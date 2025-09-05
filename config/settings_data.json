@@ -40,7 +40,7 @@
     "type_font_h6": "subheading",
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
-    "page_width": "narrow",
+    "page_width": "normal",
     "page_transition_enabled": false,
     "transition_to_main_product": false,
     "add_to_cart_animation": false,
@@ -91,7 +91,7 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ba131300",
+          "background": "rgba(0,0,0,0)",
           "foreground_heading": "#000000",
           "foreground": "#ffffff",
           "primary": "#777777",
