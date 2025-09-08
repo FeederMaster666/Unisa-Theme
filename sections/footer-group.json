@@ -22,7 +22,7 @@
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h4",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -39,11 +39,55 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_CEEyqQ": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Sigue nuestro hashtag #<em>myunisas </em>y encuentra inspiración para combinar tus Unisas. Además podrás compartir tus looks con nosotros<br/><br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_GqMfmf": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Echa un vistazo >",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "link",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_VhYDY6"
+        "text_VhYDY6",
+        "text_CEEyqQ",
+        "button_GqMfmf"
       ],
+      "custom_css": [],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -73,18 +117,18 @@
         "padding-block-end": 0
       }
     },
-    "section_rNXfgx": {
+    "section_AKtKrp": {
       "type": "section",
       "blocks": {
-        "text_beRU3N": {
+        "text_XxNJeq": {
           "type": "text",
-          "name": "t:names.heading",
+          "name": "t:names.text",
           "settings": {
-            "text": "<h4><strong>Stay tuned, stay stylish</strong></h4>",
-            "width": "100%",
-            "max_width": "none",
+            "text": "<p><strong>Stay tuned, stay stylish</strong></p>",
+            "width": "fit-content",
+            "max_width": "normal",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -102,11 +146,12 @@
           },
           "blocks": {}
         },
-        "text_DDqwkf": {
+        "text_BYJPBQ": {
           "type": "text",
+          "name": "t:names.text",
           "settings": {
-            "text": "<p>Suscríbete a nuestra newsletter y disfruta de ventajas como ofertas especiales, descuentos y las últimas novedades.<br/><br/></p>",
-            "width": "100%",
+            "text": "<p>Suscríbete a nuestra newsletter y disfruta de ventajas como ofertas especiales, <br/></p><p>descuentos y las últimas novedades.<br/></p>",
+            "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
             "type_preset": "paragraph",
@@ -127,7 +172,7 @@
           },
           "blocks": {}
         },
-        "button_YaBRmF": {
+        "button_ewTaBD": {
           "type": "button",
           "name": "t:names.button",
           "settings": {
@@ -136,20 +181,20 @@
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "custom",
-            "custom_width": 35,
+            "custom_width": 31,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100
           },
           "blocks": {}
         },
-        "text_epGDEa": {
+        "text_Dcqrn9": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
             "text": "<p>Tu Tienda de Zapatos</p>",
-            "width": "fit-content",
+            "width": "100%",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -161,7 +206,7 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 0,
+            "padding-block-start": 70,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -170,23 +215,23 @@
         }
       },
       "block_order": [
-        "text_beRU3N",
-        "text_DDqwkf",
-        "button_YaBRmF",
-        "text_epGDEa"
+        "text_XxNJeq",
+        "text_BYJPBQ",
+        "button_ewTaBD",
+        "text_Dcqrn9"
       ],
-      "name": "t:names.email_signup",
+      "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 12,
         "section_width": "page-width",
-        "section_height": "",
+        "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "scheme-3",
         "background_media": "none",
@@ -200,8 +245,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "divider_eDBMJd": {
@@ -947,7 +992,7 @@
   },
   "order": [
     "section_hAQDdR",
-    "section_rNXfgx",
+    "section_AKtKrp",
     "divider_eDBMJd",
     "section_3C8jEr",
     "footer"
