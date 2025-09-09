@@ -563,6 +563,7 @@
 
     @media screen and (min-width: 990px) {
       grid-template-columns: repeat(var(--menu-content-columns-desktop), minmax(0, 1fr));
+      grid-template-columns: repeat(var(--menu-content-columns-tablet), minmax(0, 1fr));
     }
   }
 
@@ -571,6 +572,7 @@
 
     @media screen and (min-width: 990px) {
       grid-template-columns: repeat(var(--menu-content-columns-desktop), minmax(0, 300px));
+      grid-template-columns: repeat(var(--menu-content-columns-tablet), minmax(0, 1fr));
     }
   }
 
@@ -605,7 +607,7 @@
   color: #d40000 !important;
   font-weight: 600;
   }
-  
+
   .mega-menu__content-list li {
     white-space: normal;
   }
