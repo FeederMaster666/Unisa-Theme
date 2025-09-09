@@ -233,10 +233,13 @@ p:empty {
   html:active-view-transition-type(product-image-transition) {
     view-transition-name: root-custom;
   }
-
+#MenuItem-sale {
+  color: #d40000 !important;
+  font-weight: 600;
+}
   ::view-transition {
     pointer-events: none;
-  }
+  }4
 
   html:active-view-transition-type(page-navigation) main[data-page-transition-enabled='true'] {
     view-transition-name: main-content;
