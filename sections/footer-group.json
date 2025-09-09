@@ -150,7 +150,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Suscríbete a nuestra newsletter y disfruta de ventajas como ofertas especiales, <br/></p><p>descuentos y las últimas novedades.<br/></p>",
+            "text": "<p>Suscríbete a nuestra newsletter y disfruta de ventajas como ofertas especiales,descuentos y las últimas novedades.<br/></p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -181,7 +181,7 @@
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "custom",
-            "custom_width": 31,
+            "custom_width": 36,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100
           },
@@ -799,7 +799,7 @@
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "scheme-3",
