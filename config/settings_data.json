@@ -80,9 +80,9 @@
     "variant_swatch_width": 34,
     "variant_swatch_height": 34,
     "variant_swatch_radius": 32,
-    "variant_button_border_width": 0,
-    "variant_button_radius": 0,
-    "variant_button_width": "equal-width-buttons",
+    "variant_button_border_width": 4,
+    "variant_button_radius": 100,
+    "variant_button_width": "default-width-buttons",
     "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
