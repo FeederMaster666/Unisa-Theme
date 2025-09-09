@@ -117,7 +117,9 @@
           "blocks": {}
         }
       },
-      "custom_css": [],
+      "custom_css": [
+        ".menu-list__link {color: #d40000 !important; font-weight: 600;}"
+      ],
       "settings": {
         "logo_position": "left",
         "menu_position": "left",
