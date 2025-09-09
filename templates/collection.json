@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1>Zapatos de Mujer. Toda la colección de calzado Unisa online</h1>",
+            "text": "<h1>Zapatos de Mujer. </h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
