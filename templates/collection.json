@@ -38,13 +38,13 @@
           },
           "blocks": {}
         },
-        "text_tqQTNE": {
+        "text_fkT8BL": {
           "type": "text",
-          "name": "Title",
+          "name": "t:names.text",
           "settings": {
             "text": "<h1>Zapatos de Mujer. Toda la colección de calzado Unisa online</h1>",
-            "width": "100%",
-            "max_width": "none",
+            "width": "fit-content",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
@@ -53,7 +53,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "color": "var(--color-foreground)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -67,7 +67,7 @@
       },
       "block_order": [
         "text_twGGkJ",
-        "text_tqQTNE"
+        "text_fkT8BL"
       ],
       "name": "Collection heading",
       "settings": {
