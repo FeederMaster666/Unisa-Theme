@@ -184,13 +184,13 @@
                   "type": "variant-picker",
                   "name": "t:names.product_variant_picker",
                   "settings": {
-                    "variant_style": "buttons",
+                    "variant_style": "dropdowns",
                     "show_swatches": false,
                     "alignment": "center",
-                    "padding-block-start": 100,
-                    "padding-block-end": 100,
-                    "padding-inline-start": 100,
-                    "padding-inline-end": 100
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
