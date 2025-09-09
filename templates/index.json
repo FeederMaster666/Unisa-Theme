@@ -335,6 +335,7 @@
           ]
         }
       },
+      "custom_css": [],
       "name": "t:names.collections_editorial",
       "settings": {
         "collection_list": [
@@ -347,15 +348,15 @@
         "carousel_on_mobile": false,
         "columns": 3,
         "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
+        "mobile_card_size": "44cqw",
+        "columns_gap": 73,
         "bento_gap": 8,
         "rows_gap": 8,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
-        "section_width": "page-width",
-        "gap": 64,
+        "section_width": "full-width",
+        "gap": 100,
         "color_scheme": "scheme-5",
         "padding-block-start": 48,
         "padding-block-end": 48
