@@ -239,6 +239,21 @@
                 "payment_icons_BTeBXb"
               ]
             },
+            "button_B7VETP": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Guia de tallas",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "custom",
+                "custom_width": 100,
+                "width_mobile": "custom",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -268,6 +283,7 @@
           },
           "block_order": [
             "group_icgrde",
+            "button_B7VETP",
             "text_aEtTtq"
           ]
         }
