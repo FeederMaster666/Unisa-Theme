@@ -233,7 +233,7 @@ p:empty {
   html:active-view-transition-type(product-image-transition) {
     view-transition-name: root-custom;
   }
-#MenuItem-sale {
+#MenuItem-Rebajas {
   color: #d40000 !important;
   font-weight: 600;
 }
