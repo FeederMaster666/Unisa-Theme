@@ -649,6 +649,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".header__icon--menu {display: block !important;}"
+    ]
   }
 }
