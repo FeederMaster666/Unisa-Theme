@@ -118,7 +118,7 @@
         }
       },
       "custom_css": [
-        ".header__icon--menu{display: block !important;}"
+        ".menu-list__list li:first-child a {color: #d40000 !important; font-weight: 600;}"
       ],
       "settings": {
         "logo_position": "left",

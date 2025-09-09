@@ -650,7 +650,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".header__icon--menu {display: block !important;}"
+      ".header__icon--menu {display: block !important;}",
+      ".header__inline-menu {display: none !important;}",
+      ".menu-list__list li:first-child a {color: #d40000 !important; font-weight: 600;}",
+      ".announcement-bar__message:nth-child(3) {background-color: #d40000 !important; color: #fff !important;}"
     ]
   }
 }
