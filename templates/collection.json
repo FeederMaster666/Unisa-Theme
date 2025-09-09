@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<p>{{ closest.collection.title }}</p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -78,7 +78,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "gap": 13,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -95,7 +95,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-end": 0
       }
     },
     "main": {
@@ -107,7 +107,7 @@
           "settings": {
             "enable_filtering": true,
             "filter_style": "horizontal",
-            "filter_width": "centered",
+            "filter_width": "full-width",
             "text_label_case": "default",
             "show_swatch_label": false,
             "show_filter_label": false,
@@ -218,10 +218,10 @@
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
         "columns_gap_horizontal": 16,
-        "columns_gap_vertical": 24,
+        "columns_gap_vertical": 50,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "padding-block-start": 0,
         "padding-block-end": 32
       }
