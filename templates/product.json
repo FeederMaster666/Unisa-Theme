@@ -232,11 +232,11 @@
                   },
                   "block_order": []
                 },
-                "button_cX9rNX": {
+                "button_4KaVLH": {
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "Guía de tallas >",
+                    "label": "Guia de tallas >",
                     "link": "shopify://collections/all",
                     "open_in_new_tab": false,
                     "style_class": "link",
@@ -532,7 +532,7 @@
                 "text_y89jLK",
                 "variant_picker_wgzYRd",
                 "buy_buttons_4G36B4",
-                "button_cX9rNX",
+                "button_4KaVLH",
                 "button_MdnCyw",
                 "accordion_cfeRDK"
               ]
