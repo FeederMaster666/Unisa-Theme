@@ -284,7 +284,7 @@
                     "accordion_row_beqgLJ": {
                       "type": "_accordion-row",
                       "settings": {
-                        "heading": "Return policy",
+                        "heading": "DESCRIPCIÓN",
                         "open_by_default": true,
                         "icon": "none",
                         "width": 20
@@ -293,7 +293,7 @@
                         "text_qUjqTe": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                            "text": "<p>MIDOW_VER</p><p>Merceditas de punta cuadrada fabricada en charol arrugado. Tacón ancho de 6cm de altura forrado en charol al tono. Ajustable con hebilla metálica en el empeine. Suela de goma ligera, flexible y antideslizante. Un diseño elegante, atemporal y muy cómodo.<br/><br/></p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -323,7 +323,7 @@
                     "accordion_row_8aNBcY": {
                       "type": "_accordion-row",
                       "settings": {
-                        "heading": "Shipping",
+                        "heading": "COMPOSICIÓN",
                         "open_by_default": false,
                         "icon": "none",
                         "width": 20
@@ -362,7 +362,7 @@
                     "accordion_row_tzazaK": {
                       "type": "_accordion-row",
                       "settings": {
-                        "heading": "Manufacturing",
+                        "heading": "ENVÍOS",
                         "open_by_default": false,
                         "icon": "none",
                         "width": 20
@@ -401,7 +401,7 @@
                     "accordion_row_FN4piP": {
                       "type": "_accordion-row",
                       "settings": {
-                        "heading": "Manufacturing",
+                        "heading": "DEVOLUCIONES",
                         "open_by_default": false,
                         "icon": "none",
                         "width": 20
@@ -440,7 +440,7 @@
                     "accordion_row_VdPTK4": {
                       "type": "_accordion-row",
                       "settings": {
-                        "heading": "Manufacturing",
+                        "heading": "¿NECESITAS AYUDA?",
                         "open_by_default": false,
                         "icon": "none",
                         "width": 20
@@ -479,7 +479,7 @@
                     "accordion_row_TEmQ93": {
                       "type": "_accordion-row",
                       "settings": {
-                        "heading": "Manufacturing",
+                        "heading": "COMPARTIR",
                         "open_by_default": false,
                         "icon": "none",
                         "width": 20
