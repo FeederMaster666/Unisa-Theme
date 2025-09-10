@@ -332,7 +332,7 @@
                         "text_AAULBV": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                            "text": "<ul><li>Empeine: Cuero <span style=\"text-decoration:underline\"><strong>Ver &gt;</strong></span></li><li>Forro y plantilla : Cuero</li><li>Suela: Otros materiales </li><li>Altura plataforma: 0,5 cm</li><li>Altura tacón: 6 cm</li><li>Puntera: Cuadrada</li><li>Color: BURDEOS (Rojo)</li></ul>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -371,7 +371,7 @@
                         "text_X3tydy": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                            "text": "<ul><li>Envío Estándar: 2 días laborables</li><li>Envío Express: 1 día laboral</li></ul><p>Puedes consultar los gastos de envío en la siguiente tabla:<span style=\"text-decoration:underline\">Consúltalo aquí</span>.En cualquier caso, durante el proceso de compra y antes de realizar el pago te detallamos los gastos de envío.Nuestro compromiso con el planeta también está presente en nuestros envíos. Todas las cajas de nuestros pedidos son de cartón 100% reciclado y reutilizable.<em>Unisa</em>❤<em>the planet</em>*Para Canarias, Ceuta y Melilla consulta las opciones de envío<br/><br/></p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
