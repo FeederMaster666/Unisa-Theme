@@ -238,27 +238,56 @@
     }
   }
 
+
+.menu-list__list > li:first-child a {
+  color: red !important;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*
       High specificity selectors to subdue non-hovered links without javascript.
       If the need for js-generated `hovered` and `focused` classes arises for another reason we can simplify these.
-    */
+    
   .menu-list:where(:has(.menu-list__list-item:hover)),
   .menu-list:where(:has(.menu-list__list-item:focus-within)),
   .menu-list:where(:has(.menu-list__list-item:not([aria-hidden='true']) .menu-list__link--active)) {
     .menu-list__link {
       color: rgb(var(--menu-top-level-font-color-rgb) / var(--opacity-subdued-text));
-      content: attr(data-first-word);
-      color: red;
+      
     }
   }
+*/
 
-  /* stylelint-disable-next-line selector-max-specificity */
+  /* stylelint-disable-next-line selector-max-specificity *
   .menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active,
   .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link,
   .menu-list .menu-list__list-item[slot='overflow'] .menu-list__link[aria-expanded='true'] {
     color: var(--menu-top-level-font-color);
+
+  
+    
+    content: attr(data-first-word);
+    color: red;
     
   }
+  */
   
 
   .overflow-menu::part(list) {
