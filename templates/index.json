@@ -389,7 +389,7 @@
           "static": true,
           "settings": {
             "placement": "on_image",
-            "horizontal_alignment": "flex-start",
+            "horizontal_alignment": "flex-end",
             "vertical_alignment": "center",
             "collection_card_gap": 0,
             "inherit_color_scheme": true,
@@ -400,31 +400,6 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_nw4ajJ": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
-              "settings": {
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h5",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#ffffff",
-                "corner_radius": 0,
-                "padding-block-start": 100,
-                "padding-block-end": 100,
-                "padding-inline-start": 45,
-                "padding-inline-end": 45
-              },
-              "blocks": {}
-            },
             "collection-card-image": {
               "type": "_collection-card-image",
               "name": "t:names.collection_card_image",
@@ -443,9 +418,7 @@
               "blocks": {}
             }
           },
-          "block_order": [
-            "collection_title_nw4ajJ"
-          ]
+          "block_order": []
         }
       },
       "custom_css": [],
@@ -474,6 +447,25 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "editorial_carousel_VmtXYQ": {
+      "type": "editorial-carousel",
+      "blocks": {
+        "slide_AV7h9i": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/oficina.webp",
+            "title": "",
+            "button_label": "Ver más",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_AV7h9i"
+      ],
+      "name": "Editorial Carousel",
+      "settings": {}
     }
   },
   "order": [
@@ -481,6 +473,7 @@
     "hero_373Daz",
     "hero_jGWeFh",
     "product_recommendations_FatYUL",
-    "collection_list_e8aTx3"
+    "collection_list_e8aTx3",
+    "editorial_carousel_VmtXYQ"
   ]
 }
