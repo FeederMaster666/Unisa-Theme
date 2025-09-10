@@ -1,91 +1,70 @@
 <style>
-/* Carrusel editorial estilo Unisa */
-.custom-carousel {
+.editorial-carousel .post-wrapper {
   position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
-.carousel-container {
-  display: flex;
-  transition: transform 0.6s ease;
-}
-
-.carousel-slide {
-  min-width: 100%;
-  position: relative;
-  height: 600px;
-}
-
-.carousel-slide img {
+.editorial-carousel .picture-wrapper img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
-.text-overlay {
+.editorial-carousel .text-wrapper {
   position: absolute;
-  left: 60px;
-  bottom: 60px;
-  background: transparent;
-  padding: 0;
-  max-width: 50%;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 20px 30px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.text-overlay h3 {
-  font-size: 28px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-.text-overlay p {
+.editorial-carousel .text-wrapper h3 {
   font-size: 14px;
-  color: #444;
-  line-height: 1.6;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.editorial-carousel .text-wrapper .title {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
-.text-overlay a {
-  color: #222;
-  text-decoration: underline;
+.editorial-carousel .text-wrapper .button {
   font-size: 14px;
-  background: none;
-  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .text-overlay {
-    position: static;
-    margin: 20px;
-    max-width: 100%;
-  }
-  .carousel-slide {
-    height: auto;
-  }
-  .carousel-slide img {
-    height: 300px;
-    object-fit: cover;
-  }
-}
 
 </style>
 
-<div class="custom-carousel">
-  <div class="carousel-container" id="carouselContainer">
+<div class="editorial-carousel swiper">
+  <ul class="swiper-wrapper">
     {% for block in section.blocks %}
-      <div class="carousel-slide">
-        <img src="{{ block.settings.image | image_url: width: 1600 }}" alt="{{ block.settings.title }}">
-        <div class="text-overlay">
-          <h3>{{ block.settings.title }}</h3>
-          <p>{{ block.settings.text }}</p>
-          <a href="{{ block.settings.link }}">{{ block.settings.button_label }}</a>
+      <li class="child-post swiper-slide">
+        <div class="post-wrapper">
+          <div class="picture-wrapper">
+            <img src="{{ block.settings.image | image_url: width: 1200 }}" alt="{{ block.settings.title }}">
+          </div>
+          <a href="{{ block.settings.link }}">
+            <div class="text-wrapper show-post">
+              <h3 class="child-slide-descripcion">{{ block.settings.subtitle }}</h3>
+              <span class="title">{{ block.settings.title }}</span>
+              <span class="text button hover-opacity">{{ block.settings.button_label }}</span>
+            </div>
+          </a>
         </div>
-      </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
+  <!-- Controles Swiper -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
 </div>
 
 
@@ -106,49 +85,20 @@ setInterval(() => {
 
 {% schema %}
 {
-  "name": "Carrusel Editorial Unisa",
-  "settings": [],
+  "name": "Editorial Carousel",
   "blocks": [
     {
       "type": "slide",
       "name": "Slide",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Imagen"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Título"
-        },
-        {
-          "type": "textarea",
-          "id": "text",
-          "label": "Texto descriptivo"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Enlace"
-        },
-        {
-          "type": "text",
-          "id": "button_label",
-          "label": "Texto del botón",
-          "default": "Ver más"
-        }
+        { "id": "image", "type": "image_picker", "label": "Imagen" },
+        { "id": "subtitle", "type": "text", "label": "Subtítulo" },
+        { "id": "title", "type": "text", "label": "Título" },
+        { "id": "button_label", "type": "text", "label": "Texto botón", "default": "Ver selección >" },
+        { "id": "link", "type": "url", "label": "Enlace" }
       ]
     }
   ],
-  "max_blocks": 6,
-  "presets": [
-    {
-      "name": "Carrusel Editorial Unisa",
-      "category": "Custom"
-    }
-  ]
+  "presets": [{ "name": "Editorial Carousel" }]
 }
-
 {% endschema %}
