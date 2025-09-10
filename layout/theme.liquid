@@ -4,9 +4,9 @@
   lang="{{ request.locale.iso_code }}"
 >
   <head>
-    {%- render 'breadcrumbs' -%}
+   
     {%- render 'stylesheets' -%}
-
+    
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -22,7 +22,7 @@
       blocking="render"
       id="view-transition-render-blocker"
     >
-
+    {%- render 'breadcrumbs' -%}
     {%- render 'meta-tags' -%}
     {%- render 'fonts' -%}
     {%- render 'scripts' -%}
