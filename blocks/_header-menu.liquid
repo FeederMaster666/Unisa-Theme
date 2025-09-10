@@ -256,6 +256,10 @@
   .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link,
   .menu-list .menu-list__list-item[slot='overflow'] .menu-list__link[aria-expanded='true'] {
     color: var(--menu-top-level-font-color);
+    
+  }
+  .menu-list .menu-list__list-item[slot='overflow'] .menu-list__link[aria-expanded='true'] {
+    color: var(--menu-top-level-font-color);
     content: attr(data-first-word);
     color: red;
   }
