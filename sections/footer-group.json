@@ -281,7 +281,7 @@
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 8,
             "width": "custom",
-            "custom_width": 10,
+            "custom_width": 24,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -312,7 +312,7 @@
               "settings": {
                 "text": "<p><strong>Pais / region<br/><br/></strong></p>",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "narrow",
                 "alignment": "left",
                 "type_preset": "h5",
                 "font": "var(--font-body--family)",
