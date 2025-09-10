@@ -244,7 +244,10 @@
   font-weight: 600;
 }
 
-
+/* Hover normal para los demás, pero sin pisar el primero */
+.menu-list__list > li:not(:first-child):hover a {
+  color: var(--menu-top-level-font-color) !important;
+}
 
 
 
