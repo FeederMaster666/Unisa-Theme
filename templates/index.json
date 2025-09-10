@@ -447,26 +447,6 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "editorial_carousel_VmtXYQ": {
-      "type": "editorial-carousel",
-      "blocks": {
-        "slide_AV7h9i": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/oficina.webp",
-            "subtitle": "La vuelta mas facil y comoda",
-            "title": "BACK TO WORK",
-            "button_label": "Office Style>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_AV7h9i"
-      ],
-      "name": "Editorial Carousel",
-      "settings": {}
     }
   },
   "order": [
@@ -474,7 +454,6 @@
     "hero_373Daz",
     "hero_jGWeFh",
     "product_recommendations_FatYUL",
-    "collection_list_e8aTx3",
-    "editorial_carousel_VmtXYQ"
+    "collection_list_e8aTx3"
   ]
 }
