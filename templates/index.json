@@ -455,8 +455,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/oficina.webp",
+            "subtitle": "",
             "title": "",
-            "button_label": "Ver más",
+            "button_label": "Office Style>",
             "link": ""
           }
         }
