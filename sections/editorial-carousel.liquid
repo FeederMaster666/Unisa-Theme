@@ -1,25 +1,42 @@
 <style>
+.editorial-carousel .swiper-slide {
+  display: flex;
+  align-items: stretch;
+  height: auto; /* se ajusta al contenido */
+}
+
+.editorial-carousel .post-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* mitad imagen, mitad texto */
+  background: #000; /* color de fondo negro como separación */
+  height: 100%;
+}
+
+.editorial-carousel .picture-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .editorial-carousel .text-wrapper {
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
   background: #fff;
-  padding: 25px 30px;
-  max-width: 400px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .editorial-carousel .text-wrapper h3 {
   font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #666;
 }
 
 .editorial-carousel .text-wrapper .title {
   font-size: 28px;
   font-family: "Span", serif;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   display: block;
 }
 
@@ -32,10 +49,11 @@
 </style>
 
 <div class="editorial-carousel swiper-container">
-  <ul class="childs-slider swiper-wrapper">
+  <ul class="swiper-wrapper">
     {% for block in section.blocks %}
       <li class="child-post swiper-slide">
         <div class="post-wrapper">
+          <!-- Columna de imagen -->
           <div class="picture-wrapper">
             <img 
               src="{{ block.settings.image | image_url: width: 1200 }}" 
@@ -43,28 +61,20 @@
               class="picture-img" 
               loading="lazy">
           </div>
-          <a href="{{ block.settings.link }}">
-            <div class="text-wrapper show-post">
-              <h3 class="text child-slide-descripcion">{{ block.settings.subtitle }}</h3>
-              <span class="title">{{ block.settings.title }}</span>
-              <span class="text button hover-opacity">{{ block.settings.button_label }}</span>
-            </div>
-          </a>
+
+          <!-- Columna de texto -->
+          <div class="text-wrapper">
+            <h3 class="text child-slide-descripcion">{{ block.settings.subtitle }}</h3>
+            <span class="title">{{ block.settings.title }}</span>
+            <a href="{{ block.settings.link }}" class="text button hover-opacity">
+              {{ block.settings.button_label }}
+            </a>
+          </div>
         </div>
       </li>
     {% endfor %}
   </ul>
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-<div class="swiper-pagination"></div>
 </div>
-
-
-
-
-
-
-
 
 {% schema %}
 {
@@ -85,4 +95,5 @@
   "presets": [{ "name": "Editorial Carousel" }]
 }
 {% endschema %}
+
 
