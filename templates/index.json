@@ -448,10 +448,7 @@
           ]
         }
       },
-      "custom_css": [
-        ".collection-card__content {margin-left: -50px; z-index: 3; position: relative;}",
-        ".collection-card {overflow: visible;}"
-      ],
+      "custom_css": [],
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [
