@@ -1,4 +1,23 @@
+<style>
+  .collection-separator-wrapper {
+  grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+  width: 100%;
+  margin: 2rem 0;
+}
 
+.collection-separator {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+/* Para layouts flexbox */
+.collection-separator-wrapper {
+  flex-basis: 100%;
+  width: 100%;
+}
+</style>
 
 <script
   src="{{ 'results-list.js' | asset_url }}"
@@ -55,13 +74,14 @@
             {% content_for 'block', type: '_product-card', id: 'product-card', closest.product: product %}
             {% # theme-check-enable %}
           </li>
-          {% if forloop.index == 4 %}
-            <div class="collection-separator">
-              <h3>Más productos destacados</h3>
-              <p>Descubre nuestra selección especial</p>
+           {% if forloop.index == 5 %}
+            <div class="collection-separator-wrapper">
+              <div class="collection-separator">
+                <h3>Productos destacados</h3>
+                <p>Descubre nuestra selección especial</p>
+              </div>
             </div>
           {% endif %}
-
         {% endfor %}
       {% endcapture %}
 
