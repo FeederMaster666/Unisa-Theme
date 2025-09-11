@@ -1533,6 +1533,13 @@ media-gallery {
     grid-area: unset;
   }
 }
+.product-media-modal {
+  max-width: 800px;
+  max-height: 90vh;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 :not(.dialog-zoomed-gallery) > .product-media-container {
   /* width and overflow forces children to shrink to parent width */
