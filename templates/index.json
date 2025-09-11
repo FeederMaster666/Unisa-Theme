@@ -447,6 +447,25 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "editorial_carousel_ALyj9F": {
+      "type": "editorial-carousel",
+      "blocks": {
+        "slide_gXJfA3": {
+          "type": "slide",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "Ver selección >",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_gXJfA3"
+      ],
+      "name": "Editorial Carousel",
+      "settings": {}
     }
   },
   "order": [
@@ -454,6 +473,7 @@
     "hero_373Daz",
     "hero_jGWeFh",
     "product_recommendations_FatYUL",
-    "collection_list_e8aTx3"
+    "collection_list_e8aTx3",
+    "editorial_carousel_ALyj9F"
   ]
 }
