@@ -1533,14 +1533,8 @@ media-gallery {
     grid-area: unset;
   }
 }
-media-gallery img {
-  transition: transform 0.3s ease;
-  cursor: zoom-in;
-}
 
-media-gallery img:hover {
-  transform: scale(1.2);
-}
+
 .product-media-modal {
   max-width: 800px;
   max-height: 90vh;
