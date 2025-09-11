@@ -1,78 +1,90 @@
 <style>
-.editorial-carousel .post-wrapper {
-  position: relative;
+.block-posts {
+  width: 100%;
+  overflow: hidden;
 }
 
-.editorial-carousel .picture-wrapper img {
+.child-post {
+  width: 300px; /* Ajusta según necesites */
+  flex-shrink: 0;
+}
+
+.post-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.picture-wrapper {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 200px;
+  overflow: hidden;
+}
+
+.picture-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-
-
-.editorial-carousel .text-wrapper {
+.text-wrapper {
   position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  background: #fff;
-  padding: 25px;
-  max-width: 320px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-
-.editorial-carousel .text-wrapper h3 {
-  font-size: 14px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: #211F1D;
-}
-
-.editorial-carousel .text-wrapper .title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.editorial-carousel .text-wrapper .button {
-  font-size: 14px;
-  text-decoration: underline;
-  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  padding: 20px;
 }
 
 </style>
 
-<div class="editorial-carousel swiper">
-  <ul class="swiper-wrapper">
-    {% for block in section.blocks %}
-      <li class="child-post swiper-slide">
-        <div class="post-wrapper">
-          <div class="picture-wrapper">
-            <img src="{{ block.settings.image | image_url: width: 1200 }}" alt="{{ block.settings.title }}">
-          </div>
-          <a href="{{ block.settings.link }}">
-            <div class="text-wrapper show-post">
-              <h3 class="child-slide-descripcion">{{ block.settings.subtitle }}</h3>
-              <span class="title">{{ block.settings.title }}</span>
-              <span class="text button hover-opacity">{{ block.settings.button_label }}</span>
-            </div>
-          </a>
+<div class="block-posts swiper-container">
+  <ul class="childs-slider swiper-wrapper">
+    <!-- Cada slide -->
+    <li class="child-post swiper-slide">
+      <div class="post-wrapper">
+        <div class="picture-wrapper">
+          <picture class="image-wrapper">
+            <source media="(orientation: portrait)" srcset="imagen-portrait.jpg">
+            <source media="(orientation: landscape)" srcset="imagen-landscape.jpg">
+            <img class="picture-img" src="imagen-landscape.jpg" alt="Descripción" loading="lazy">
+          </picture>
         </div>
-      </li>
-    {% endfor %}
+        <a href="enlace-destino">
+          <div class="text-wrapper show-post">
+            <h3 class="text child-slide-descripcion">Título descriptivo</h3>
+            <span class="title">Título principal</span>
+            <span class="text button hover-opacity">Ver más ></span>
+          </div>
+        </a>
+      </div>
+    </li>
+    <!-- Más slides... -->
   </ul>
-  <!-- Controles Swiper -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
 </div>
 
-
-
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.block-posts', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    freeMode: true,
+    loop: false,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      }
+    }
+  });
+});
+</script>
 {% schema %}
 {
   "name": "Editorial Carousel",
