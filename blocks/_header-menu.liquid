@@ -130,6 +130,27 @@
   header-menu {
     width: 100%;
   }
+  /* Overlay para cerrar el menú */
+.menu-drawer__overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 9998 !important;
+}
+
+/* Responsive: mantener funcionalidad en móvil */
+@media screen and (max-width: 749px) {
+  .header__icon--menu {
+    display: block !important;
+  }
+  
+  .header__inline-menu {
+    display: none !important;
+  }
+}s
 
 /* Drawer menú estilo Unisa */
 .menu-drawer {
