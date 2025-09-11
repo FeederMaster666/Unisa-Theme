@@ -418,10 +418,10 @@
                 "background": true,
                 "background_color": "#ffffff",
                 "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 19,
+                "padding-block-end": 19,
+                "padding-inline-start": 19,
+                "padding-inline-end": 19
               },
               "blocks": {}
             },
@@ -448,6 +448,9 @@
           ]
         }
       },
+      "custom_css": [
+        ".collection-card__content {margin-left: -20%; z-index: 99999999; position: relative;}"
+      ],
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [
