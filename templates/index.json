@@ -391,7 +391,7 @@
             "placement": "on_image",
             "horizontal_alignment": "flex-end",
             "vertical_alignment": "center",
-            "collection_card_gap": 0,
+            "collection_card_gap": 50,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -412,14 +412,14 @@
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 22,
+                "width": "custom",
+                "custom_width": 85,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
+                "height": "custom",
+                "custom_height": 76,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
                 "background_media": "none",
@@ -461,7 +461,7 @@
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
-                    "padding-inline-start": 0,
+                    "padding-inline-start": 25,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
@@ -486,8 +486,8 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
+                    "padding-block-end": 100,
+                    "padding-inline-start": 63,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
@@ -538,7 +538,7 @@
         }
       },
       "custom_css": [
-        ".collection-card__content{}"
+        ".collection-card__content {}"
       ],
       "name": "t:names.collections_editorial",
       "settings": {
@@ -553,7 +553,7 @@
         "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "44cqw",
-        "columns_gap": 73,
+        "columns_gap": 100,
         "bento_gap": 8,
         "rows_gap": 8,
         "max_collections": 4,
