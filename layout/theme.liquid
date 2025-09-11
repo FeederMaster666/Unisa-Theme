@@ -71,23 +71,32 @@
       {% render 'quick-add-modal' %}
     {% endif %}
 
-
+    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    new Swiper('.editorial-carousel', {
-      slidesPerView: 1.2,
-      spaceBetween: 20,
-      loop: true,
-      breakpoints: {
-        768: { slidesPerView: 2.5 },
-        1200: { slidesPerView: 3.5 }
-      }
-    });
+      new Swiper('.editorial-carousel', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1200: { slidesPerView: 2.5 }
+    }
   });
+});
 </script>  
+
 </body>
   
 </html>

@@ -400,6 +400,32 @@
             "border_radius": 0
           },
           "blocks": {
+            "text_trtWbm": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>La vuelta mas faicl y o</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#eae8e8",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "collection-card-image": {
               "type": "_collection-card-image",
               "name": "t:names.collection_card_image",
@@ -418,7 +444,9 @@
               "blocks": {}
             }
           },
-          "block_order": []
+          "block_order": [
+            "text_trtWbm"
+          ]
         }
       },
       "custom_css": [],
@@ -447,25 +475,6 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "editorial_carousel_ALyj9F": {
-      "type": "editorial-carousel",
-      "blocks": {
-        "slide_gXJfA3": {
-          "type": "slide",
-          "settings": {
-            "subtitle": "",
-            "title": "",
-            "button_label": "Ver selección >",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_gXJfA3"
-      ],
-      "name": "Editorial Carousel",
-      "settings": {}
     }
   },
   "order": [
@@ -473,7 +482,6 @@
     "hero_373Daz",
     "hero_jGWeFh",
     "product_recommendations_FatYUL",
-    "collection_list_e8aTx3",
-    "editorial_carousel_ALyj9F"
+    "collection_list_e8aTx3"
   ]
 }
