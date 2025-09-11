@@ -1640,10 +1640,18 @@ media-gallery.media-gallery--grid .media-gallery__grid .product-media-container 
   }
 }
 
+zoom-dialog dialog img {
+  max-width: 80%;             /* cambia el 80% al tamaño que quieras */
+  max-height: 80%;            /* controla el alto máximo */
+  object-fit: contain;        /* asegura que no se deforme */
+}
 zoom-dialog dialog {
   width: 100vw;
   height: 100vh;
   border: none;
+  display: flex;              /* centra contenido */
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   max-width: 100%;
