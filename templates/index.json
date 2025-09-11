@@ -449,7 +449,7 @@
         }
       },
       "custom_css": [
-        ".collection-card__content {margin-left: -20%; z-index: 300; position: relative;}"
+        ".collection-card__content {margin-left: -20px; z-index: 300; position: relative;}"
       ],
       "name": "t:names.collections_carousel",
       "settings": {
