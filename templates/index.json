@@ -407,9 +407,9 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -448,7 +448,9 @@
           ]
         }
       },
-      "custom_css": [],
+      "custom_css": [
+        ".collection-card__content {font-family: \"span\";}"
+      ],
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [
