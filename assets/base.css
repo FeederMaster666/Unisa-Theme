@@ -1533,6 +1533,10 @@ media-gallery {
     grid-area: unset;
   }
 }
+media-gallery img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
 
 
 .product-media-modal {
