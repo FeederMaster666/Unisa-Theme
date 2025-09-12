@@ -281,10 +281,10 @@
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 8,
             "width": "custom",
-            "custom_width": 24,
-            "width_mobile": "fit-content",
+            "custom_width": 22,
+            "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
+            "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -303,7 +303,7 @@
             "padding-block-start": 10,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 100
+            "padding-inline-end": 0
           },
           "blocks": {
             "text_j96GCw": {
