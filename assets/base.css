@@ -95,10 +95,13 @@ select {
 
 .collection-card__content {
   position: absolute;
-  left: 0;
-  transform: translate(-30%, -50%); /* -30% saca el bloque blanco hacia la izquierda */
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  transform: translate(10%, -70px, 0); /* -30% saca el bloque blanco hacia la izquierda */
   background: #fff;
-  padding: 40px;
+  padding: 15px 25px;
   width: 40%; /* controla el tamaño del recuadro */
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   display: flex;
