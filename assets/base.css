@@ -104,24 +104,24 @@ select {
   display: block;
 }
 
-/* Aquí viene la magia */
+/* Bloque blanco superpuesto */
 .collection-card__content {
   position: absolute;
   top: 26%;
   left: 0;
-  transform: translate(-30%, -50%); /* -30% saca el bloque blanco hacia la izquierda */
-  transition: unset;
+  transform: translate(-30%, -50%); /* Empuja el bloque hacia fuera para que quede a medias sobre la foto */
   background: #fff;
-  padding: 25px;
-  padding-right: 10px;
+  padding: 25px 10px 25px 25px;
   height: 50%;
-  width: 47%; /* controla el tamaño del recuadro */
+  width: 47%;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 2;
 }
 
+/* Subtítulo (ej: "Prepárate para la temporada de:") */
 .collection-card__subtitle {
   font-size: 12px;
   text-transform: uppercase;
@@ -129,13 +129,16 @@ select {
   color: #666;
 }
 
+/* Título (ej: "Party") */
 .collection-card__title {
   font-size: 28px;
-  font-family: "Span", serif;
+  font-family: "Span", serif; /* asegúrate de tener cargada esta fuente o pon "serif" */
   margin-bottom: 15px;
   line-height: 1.2;
+  color: #000;
 }
 
+/* Botón (ej: "Ver selección >") */
 .collection-card__button {
   font-size: 14px;
   text-decoration: underline;
