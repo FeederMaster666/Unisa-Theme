@@ -100,8 +100,9 @@ select {
 
 /* Bloque blanco lateral */
 .collection-card__content {
+  top: 61%;
   position: absolute;
-  top: 50%;             /* centrado vertical */
+  font-family: "span";
   left: 0;              /* pegado al borde izquierdo */
   transform: translate(-30%, -50%); /* -30% sobresale a la izquierda, -50% lo centra verticalmente */
   background: #fff;
