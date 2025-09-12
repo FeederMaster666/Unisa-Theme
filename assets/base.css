@@ -92,22 +92,30 @@ select {
 
 
 
+/* Asegura que el bloque pueda sobresalir */
+.collection-card__inner {
+  position: relative;
+  overflow: visible;
+}
+
+/* Bloque blanco lateral */
 .collection-card__content {
   position: absolute;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  transform: translate(10%, -70px, 0); /* -30% saca el bloque blanco hacia la izquierda */
+  top: 50%;             /* centrado vertical */
+  left: 0;              /* pegado al borde izquierdo */
+  transform: translate(-30%, -50%); /* -30% sobresale a la izquierda, -50% lo centra verticalmente */
   background: #fff;
-  padding: 15px 25px;
-  width: 40%; /* controla el tamaño del recuadro */
+  padding: 25px;
+  width: 47%;
+  height: auto;          /* ajusta al contenido */
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
+  z-index: 2;
 }
 
+/* Subtítulo */
 .collection-card__subtitle {
   font-size: 12px;
   text-transform: uppercase;
@@ -115,18 +123,22 @@ select {
   color: #666;
 }
 
+/* Título */
 .collection-card__title {
   font-size: 28px;
   font-family: "Span", serif;
   margin-bottom: 15px;
   line-height: 1.2;
+  color: #000;
 }
 
+/* Botón */
 .collection-card__button {
   font-size: 14px;
   text-decoration: underline;
   color: #000;
 }
+
 
 .product-card__link {
   position: absolute;
