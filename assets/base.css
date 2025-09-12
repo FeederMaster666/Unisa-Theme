@@ -92,10 +92,7 @@ select {
 
 
 
-.collection-card__inner {
-  position: relative;
-  display: block; /* en vez de grid, para poder solapar */
-}
+
 
 .collection-card__image img {
   width: 100%;
