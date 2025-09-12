@@ -109,6 +109,7 @@ select {
   position: absolute;
   top: 26%;
   left: 0;
+  overflow:visible;
   transform: translate(-30%, -50%); /* Empuja el bloque hacia fuera para que quede a medias sobre la foto */
   background: #fff;
   padding: 25px 10px 25px 25px;
