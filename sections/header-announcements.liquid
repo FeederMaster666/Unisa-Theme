@@ -121,30 +121,34 @@
     inset: 0;
   }
 
-    /* Primer anuncio con fondo rojo y texto blanco */
-  .announcement-bar__slide:first-child {
-    background-color: #ff0000 !important;
-    color: #ffffff !important;
-    width: 1001%;
-    height: auto;
-  }
+   /* Aplicar colores a todo el announcement bar según el slide activo */
+.announcement-bar:has(.announcement-bar__slide:first-child:not([aria-hidden='true'])) {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+}
 
-  /* Resto de anuncios con fondo negro y texto blanco */
-  .announcement-bar__slide:not(:first-child) {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-  }
+.announcement-bar:has(.announcement-bar__slide:not(:first-child):not([aria-hidden='true'])) {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
 
-  /* Asegurar que los enlaces también tengan el color correcto */
-  .announcement-bar__slide:first-child .announcement-bar__text,
-  .announcement-bar__slide:first-child a {
-    color: #ffffff !important;
-  }
+/* Asegurar que todos los elementos internos hereden el color */
+.announcement-bar:has(.announcement-bar__slide:first-child:not([aria-hidden='true'])) * {
+  color: #ffffff !important;
+}
 
-  .announcement-bar__slide:not(:first-child) .announcement-bar__text,
-  .announcement-bar__slide:not(:first-child) a {
-    color: #ffffff !important;
-  }
+.announcement-bar:has(.announcement-bar__slide:not(:first-child):not([aria-hidden='true'])) * {
+  color: #ffffff !important;
+}
+
+/* Colores para los controles de navegación */
+.announcement-bar:has(.announcement-bar__slide:first-child:not([aria-hidden='true'])) .slideshow-control {
+  color: #ffffff !important;
+}
+
+.announcement-bar:has(.announcement-bar__slide:not(:first-child):not([aria-hidden='true'])) .slideshow-control {
+  color: #ffffff !important;
+}
 {% endstylesheet %}
 
 {% schema %}
