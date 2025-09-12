@@ -33,19 +33,15 @@
 
 
 
-<div class="collection-card">
-  <div class="collection-card__inner">
-    <div class="collection-card__image">
-      {{ collection.image | image_url: width: 1200 | image_tag }}
+<div class="block-posts">
+  <div class="child-post">
+    <div class="picture-wrapper">
+      <img src="{{ block.settings.image | image_url: width: 1200 }}" alt="{{ block.settings.title }}">
     </div>
-    <div class="collection-card__content">
-      {% if collection.metafields.custom.subtitle %}
-        <h3 class="collection-card__subtitle">{{ collection.metafields.custom.subtitle }}</h3>
-      {% endif %}
-      <h2 class="collection-card__title">{{ collection.title }}</h2>
-      <a href="{{ collection.url }}" class="collection-card__button">
-        Ver selección >
-      </a>
+    <div class="text-wrapper">
+      <h3>{{ block.settings.subtitle }}</h3>
+      <span class="title">{{ block.settings.title }}</span>
+      <a href="{{ block.settings.link }}" class="button">{{ block.settings.button_label }}</a>
     </div>
   </div>
 </div>
