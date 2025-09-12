@@ -121,28 +121,28 @@
     inset: 0;
   }
 
-  /* Primer anuncio con fondo rojo y texto blanco */
-.announcement-bar__slide:first-child {
-  background-color: #ff0000 !important;
-  color: #ffffff !important;
-}
+    /* Primer anuncio con fondo rojo y texto blanco */
+  .announcement-bar__slide:first-child {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+  }
 
-/* Resto de anuncios con fondo negro y texto blanco */
-.announcement-bar__slide:not(:first-child) {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
+  /* Resto de anuncios con fondo negro y texto blanco */
+  .announcement-bar__slide:not(:first-child) {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
 
-/* Asegurar que los enlaces también tengan el color correcto */
-.announcement-bar__slide:first-child .announcement-bar__text,
-.announcement-bar__slide:first-child a {
-  color: #ffffff !important;
-}
+  /* Asegurar que los enlaces también tengan el color correcto */
+  .announcement-bar__slide:first-child .announcement-bar__text,
+  .announcement-bar__slide:first-child a {
+    color: #ffffff !important;
+  }
 
-.announcement-bar__slide:not(:first-child) .announcement-bar__text,
-.announcement-bar__slide:not(:first-child) a {
-  color: #ffffff !important;
-}
+  .announcement-bar__slide:not(:first-child) .announcement-bar__text,
+  .announcement-bar__slide:not(:first-child) a {
+    color: #ffffff !important;
+  }
 {% endstylesheet %}
 
 {% schema %}
