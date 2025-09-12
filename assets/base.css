@@ -93,19 +93,19 @@ select {
 /* Asegura que el bloque pueda sobresalir */
 .collection-card__inner {
   position: relative;
-  overflow: visible;
+  overflow: visible; /* Esto está correcto */
 }
 
-/* Bloque blanco lateral */
+/* Bloque blanco lateral - AJUSTADO */
 .collection-card__content {
   position: absolute;
-  top: 50%;             /* centrado vertical */
-  left: 0;              /* pegado al borde izquierdo */
-  transform: translate(-30%, -50%); /* -30% sobresale a la izquierda, -50% lo centra verticalmente */
+  top: 25%;             /* Cambiado de 50% a 25% para subirlo un 50% más */
+  left: 0;              
+  transform: translate(-30%, -50%); 
   background: #fff;
   padding: 25px;
   width: 47%;
-  height: auto;          /* ajusta al contenido */
+  height: auto;          
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ select {
   z-index: 2;
 }
 
-/* Subtítulo */
+/* El resto del código permanece igual */
 .collection-card__subtitle {
   font-size: 12px;
   text-transform: uppercase;
@@ -121,7 +121,6 @@ select {
   color: #666;
 }
 
-/* Título */
 .collection-card__title {
   font-size: 28px;
   font-family: "Span", serif;
@@ -130,15 +129,11 @@ select {
   color: #000;
 }
 
-/* Botón */
 .collection-card__button {
   font-size: 14px;
   text-decoration: underline;
   color: #000;
 }
-
-
-
 .product-card__link {
   position: absolute;
   inset: 0;
