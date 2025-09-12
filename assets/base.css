@@ -110,7 +110,7 @@ select {
   top: 50%;
   left: 0;
   transform: translate(-30%, -50%); /* -30% saca el bloque blanco hacia la izquierda */
-  transform: unset;
+  transition: unset;
   background: #fff;
   padding: 40px;
   width: 40%; /* controla el tamaño del recuadro */
