@@ -98,17 +98,16 @@ select {
   overflow: visible;
 }
 
-/* Bloque blanco lateral */
 .collection-card__content {
   top: 61%;
   position: absolute;
   font-family: "span";
-  left: 0;              /* pegado al borde izquierdo */
-  transform: translate(-30%, -50%); /* -30% sobresale a la izquierda, -50% lo centra verticalmente */
+  left: 0;              
+  transform: translate(-30%, -50%); 
   background: #fff;
   padding: 25px;
   width: 47%;
-  height: auto;          /* ajusta al contenido */
+  height: auto;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -116,7 +115,7 @@ select {
   z-index: 2;
 }
 
-/* Subtítulo */
+
 .collection-card__subtitle {
   font-size: 12px;
   text-transform: uppercase;
@@ -124,7 +123,7 @@ select {
   color: #666;
 }
 
-/* Título */
+
 .collection-card__title {
   font-size: 28px;
   font-family: "Span", serif;
@@ -133,7 +132,6 @@ select {
   color: #000;
 }
 
-/* Botón */
 .collection-card__button {
   font-size: 14px;
   text-decoration: underline;
@@ -538,7 +536,7 @@ p:empty {
 @media screen and (max-width: 749px) {
   .button--full-width-mobile {
     display: block;
-    margin-left: auto;   /* empuja hacia la derecha */
+    margin-left: auto;
     margin-right: 0;
   }
   .hidden--mobile,
