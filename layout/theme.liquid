@@ -4,8 +4,10 @@
   lang="{{ request.locale.iso_code }}"
 >
   <head>
-    {%- render 'stylesheets' -%}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    {%- render 'stylesheets' -%}
+    
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -21,7 +23,6 @@
       blocking="render"
       id="view-transition-render-blocker"
     >
-
     {%- render 'meta-tags' -%}
     {%- render 'fonts' -%}
     {%- render 'scripts' -%}
@@ -36,6 +37,7 @@
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+    
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}
@@ -49,6 +51,8 @@
     ></script>
 
     <main
+      {% comment %}{%- render 'breadcrumbs' -%}*/{% endcomment %}
+    <link
       id="MainContent"
       class="content-for-layout"
       role="main"
@@ -66,5 +70,25 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
-  </body>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new Swiper('.editorial-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 2 }
+      }
+    });
+  });
+</script>
+
+</body>
+  
 </html>

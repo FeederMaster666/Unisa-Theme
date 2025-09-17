@@ -64,7 +64,6 @@ select {
 }
 
 .product-card,
-.collection-card,
 .resource-card,
 .predictive-search-results__card--product,
 .predictive-search-results__card {
@@ -74,6 +73,71 @@ select {
   will-change: transform, box-shadow;
   z-index: var(--layer-flat);
 }
+
+
+
+.collection-card__inner {
+  position: relative;
+  display: block; /* en vez de grid, para poder solapar */
+}
+
+.collection-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+/* Asegura que el bloque pueda sobresalir */
+.collection-card__inner {
+  position: relative;
+  overflow: visible;
+}
+
+.collection-card__content {
+  top: 61%;
+  position: absolute;
+  font-family: "span";
+  left: 0;              
+  transform: translate(-30%, -50%); 
+  background: #fff;
+  padding: 25px;
+  width: 47%;
+  height: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+
+.collection-card__subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+
+.collection-card__title {
+  font-size: 28px;
+  font-family: "Span", serif;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.collection-card__button {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #000;
+}
+
 
 .product-card__link {
   position: absolute;
@@ -98,6 +162,10 @@ select {
   transition: none;
   will-change: auto;
 }
+
+
+
+
 
 @media (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
   .card-hover-effect-lift .product-card:hover,
@@ -229,10 +297,13 @@ p:empty {
   html:active-view-transition-type(product-image-transition) {
     view-transition-name: root-custom;
   }
-
+#MenuItem-Rebajas {
+  color: #d40000 !important;
+  font-weight: 600;
+}
   ::view-transition {
     pointer-events: none;
-  }
+  }4
 
   html:active-view-transition-type(page-navigation) main[data-page-transition-enabled='true'] {
     view-transition-name: main-content;
@@ -315,6 +386,7 @@ p:empty {
 }
 
 @media screen and (min-width: 750px) {
+  
   .page-width-wide,
   .page-width-normal,
   .page-width-narrow,
@@ -462,6 +534,11 @@ p:empty {
 }
 
 @media screen and (max-width: 749px) {
+  .button--full-width-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
   .hidden--mobile,
   .mobile\:hidden {
     /* stylelint-disable-next-line declaration-no-important */
@@ -1627,10 +1704,18 @@ media-gallery.media-gallery--grid .media-gallery__grid .product-media-container 
   }
 }
 
+zoom-dialog dialog img {
+  max-width: 80%;             /* cambia el 80% al tamaño que quieras */
+  max-height: 80%;            /* controla el alto máximo */
+  object-fit: contain;        /* asegura que no se deforme */
+}
 zoom-dialog dialog {
   width: 100vw;
   height: 100vh;
   border: none;
+  display: flex;              /* centra contenido */
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   max-width: 100%;
